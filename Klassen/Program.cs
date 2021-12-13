@@ -80,7 +80,7 @@ class Punkt //Schlüsselwort class erzeugt eine neue Klasse mit angegebenem Beze
 {           
     //Member, member
 
-    //Felder, fields
+    //Felder, fields, UML: Attribute
     public double x; //Zugriffsmodifizierer, Sichtbarkeit
     public double y;
     private double z; //Sichtbarkeit private nur innnerhalb der Klasse (Standard)
