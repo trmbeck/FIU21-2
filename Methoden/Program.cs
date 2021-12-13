@@ -5,9 +5,13 @@ PKW auto1 = new PKW();
 //auto1.geschwindigkeit = 0;
 auto1.maxGeschwindigkeit = 200;
 auto1.beschleunigen(1000);
+Console.WriteLine("v = " + auto1.GetGeschwindigkeit());
 auto1.beschleunigen(-100);
+Console.WriteLine("v = " + auto1.GetGeschwindigkeit());
 auto1.beschleunigen(20);
+Console.WriteLine("v = " + auto1.GetGeschwindigkeit());
 auto1.beschleunigen(-50);
+Console.WriteLine("v = " + auto1.GetGeschwindigkeit());
 //auto1.geschwindigkeit = 1200;
 
 //Console.WriteLine("aktuelle V: " + auto1.geschwindigkeit);
@@ -17,7 +21,7 @@ class PKW
     //UML: Attribute, C#: Felder
     public string antriebsart;
     public int leistung;
-    private double geschwindigkeit;
+    private double geschwindigkeit;  //Kapselung
     public double maxGeschwindigkeit;
 
     //UML: Operationen, C#: Methoden
@@ -30,6 +34,10 @@ class PKW
             geschwindigkeit = maxGeschwindigkeit;
 
         }
-        Console.WriteLine("V = " + geschwindigkeit);
+    }
+
+    public double GetGeschwindigkeit()
+    {
+        return geschwindigkeit;
     }
 }
