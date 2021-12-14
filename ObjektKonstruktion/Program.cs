@@ -13,13 +13,24 @@ Console.WriteLine("Punkte: " + player.GetPunkte());
 class Spieler
 {
     // Konstruktor
-    // - Name der Klasse mit Klammernpaar
+    // - Muss Name der Klasse haben und mit Klammernpaar ausgestattet sein
     // - Code der beim Erzeugen eines Objekts ausgeführt wird
     // - Konstruktoren können individuell erstellt werden
     // - Standardkonstruktor ist vorhanden, falls es keinen individuellen Konstruktor gibt
     public Spieler(string n)
     {
         punkte = 3;
+        name = n;
+    }
+
+    public Spieler(int p) : this("Max Mustermann", p) // Konstruktorverkettung: Aufruf eines Konstruktors mit entsprechender Parameterliste
+    {
+        //punkte = p;
+    }
+
+    public Spieler(string n, int p) // Überladung des Konstruktors durch andere Parameterliste
+    {
+        punkte = p;
         name = n;
     }
 
