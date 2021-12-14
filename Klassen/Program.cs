@@ -78,7 +78,7 @@ Console.WriteLine($"P2 x: {P2.x} y: {P2.y}");
 // Eine Klasse ist ein Bauplan für Objekte
 class Punkt //Schlüsselwort class erzeugt eine neue Klasse mit angegebenem Bezeichner
 {           
-    //Member, member
+    //Mitglieder, member
 
     //Felder, fields, UML: Attribute
     public double x; //Zugriffsmodifizierer, Sichtbarkeit
