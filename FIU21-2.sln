@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beispielklasse", "Beispielk
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vektor2DÜbung", "Vektor2DÜbung\Vektor2DÜbung.csproj", "{8C4B89C7-86D3-4CE9-8728-DE1A07C752E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farbraum", "Farbraum\Farbraum.csproj", "{C3CC69F0-AC2D-49A3-BF19-DED9B170982B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{8C4B89C7-86D3-4CE9-8728-DE1A07C752E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C4B89C7-86D3-4CE9-8728-DE1A07C752E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C4B89C7-86D3-4CE9-8728-DE1A07C752E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3CC69F0-AC2D-49A3-BF19-DED9B170982B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3CC69F0-AC2D-49A3-BF19-DED9B170982B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3CC69F0-AC2D-49A3-BF19-DED9B170982B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3CC69F0-AC2D-49A3-BF19-DED9B170982B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +91,7 @@ Global
 		{0E20373E-CBB0-4591-B3E8-E121ABD6A4F2} = {02A540C0-11BA-4D26-9DDA-3E9012DF9414}
 		{41D78951-5C95-4B4E-9820-ACC02DED7737} = {A46DE4C8-B617-4272-9307-AE81E3706135}
 		{8C4B89C7-86D3-4CE9-8728-DE1A07C752E1} = {A46DE4C8-B617-4272-9307-AE81E3706135}
+		{C3CC69F0-AC2D-49A3-BF19-DED9B170982B} = {A46DE4C8-B617-4272-9307-AE81E3706135}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {75E2D41E-7134-4B60-BE43-67A81D9BC1E6}
