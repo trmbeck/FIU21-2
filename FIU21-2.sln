@@ -15,21 +15,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methoden", "Methoden\Method
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heizungsanlage", "Heizungsanlage\Heizungsanlage.csproj", "{0AE73606-9696-4FAA-A191-DEB3645D3F08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wiederholung", "Wiederholung\Wiederholung.csproj", "{2689D6FE-76C6-483F-A3CC-0E2C594EE982}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wiederholung", "Wiederholung\Wiederholung.csproj", "{2689D6FE-76C6-483F-A3CC-0E2C594EE982}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Wiederholungen", "Wiederholungen", "{14BCE98C-18A7-46D8-8D16-7981D9BF5676}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjektKonstruktion", "ObjektKonstruktion\ObjektKonstruktion.csproj", "{8C450486-B1A1-4877-ABF0-24F278EDA809}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjektKonstruktion", "ObjektKonstruktion\ObjektKonstruktion.csproj", "{8C450486-B1A1-4877-ABF0-24F278EDA809}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetterSetterMethoden", "GetterSetterMethoden\GetterSetterMethoden.csproj", "{0E20373E-CBB0-4591-B3E8-E121ABD6A4F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetterSetterMethoden", "GetterSetterMethoden\GetterSetterMethoden.csproj", "{0E20373E-CBB0-4591-B3E8-E121ABD6A4F2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Übungen", "Übungen", "{A46DE4C8-B617-4272-9307-AE81E3706135}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beispielklasse", "Beispielklasse\Beispielklasse.csproj", "{41D78951-5C95-4B4E-9820-ACC02DED7737}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beispielklasse", "Beispielklasse\Beispielklasse.csproj", "{41D78951-5C95-4B4E-9820-ACC02DED7737}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vektor2DÜbung", "Vektor2DÜbung\Vektor2DÜbung.csproj", "{8C4B89C7-86D3-4CE9-8728-DE1A07C752E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vektor2DÜbung", "Vektor2DÜbung\Vektor2DÜbung.csproj", "{8C4B89C7-86D3-4CE9-8728-DE1A07C752E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farbraum", "Farbraum\Farbraum.csproj", "{C3CC69F0-AC2D-49A3-BF19-DED9B170982B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Farbraum", "Farbraum\Farbraum.csproj", "{C3CC69F0-AC2D-49A3-BF19-DED9B170982B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeineErsteWindowsFormsApp", "MeineErsteWindowsFormsApp\MeineErsteWindowsFormsApp.csproj", "{DB3BC768-3E85-43FC-9571-F1887E34D9C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZahlenRaten", "ZahlenRaten\ZahlenRaten.csproj", "{A45B7881-4A45-48F6-8345-7D61978DEB95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passwortabfrage", "Passwortabfrage\Passwortabfrage.csproj", "{25BD4FE3-CAC5-4A83-87D7-613EEBA9CDBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +83,18 @@ Global
 		{C3CC69F0-AC2D-49A3-BF19-DED9B170982B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3CC69F0-AC2D-49A3-BF19-DED9B170982B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3CC69F0-AC2D-49A3-BF19-DED9B170982B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB3BC768-3E85-43FC-9571-F1887E34D9C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB3BC768-3E85-43FC-9571-F1887E34D9C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB3BC768-3E85-43FC-9571-F1887E34D9C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB3BC768-3E85-43FC-9571-F1887E34D9C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A45B7881-4A45-48F6-8345-7D61978DEB95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A45B7881-4A45-48F6-8345-7D61978DEB95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A45B7881-4A45-48F6-8345-7D61978DEB95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A45B7881-4A45-48F6-8345-7D61978DEB95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25BD4FE3-CAC5-4A83-87D7-613EEBA9CDBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25BD4FE3-CAC5-4A83-87D7-613EEBA9CDBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25BD4FE3-CAC5-4A83-87D7-613EEBA9CDBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25BD4FE3-CAC5-4A83-87D7-613EEBA9CDBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +110,9 @@ Global
 		{41D78951-5C95-4B4E-9820-ACC02DED7737} = {A46DE4C8-B617-4272-9307-AE81E3706135}
 		{8C4B89C7-86D3-4CE9-8728-DE1A07C752E1} = {A46DE4C8-B617-4272-9307-AE81E3706135}
 		{C3CC69F0-AC2D-49A3-BF19-DED9B170982B} = {A46DE4C8-B617-4272-9307-AE81E3706135}
+		{DB3BC768-3E85-43FC-9571-F1887E34D9C9} = {02A540C0-11BA-4D26-9DDA-3E9012DF9414}
+		{A45B7881-4A45-48F6-8345-7D61978DEB95} = {592A7CA1-81DF-474C-A8FC-6874D85425FF}
+		{25BD4FE3-CAC5-4A83-87D7-613EEBA9CDBB} = {A46DE4C8-B617-4272-9307-AE81E3706135}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {75E2D41E-7134-4B60-BE43-67A81D9BC1E6}
