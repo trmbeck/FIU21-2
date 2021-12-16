@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using Klassen;
 
 Console.WriteLine("Hello, World!");
 
@@ -60,7 +61,7 @@ double[] P = new double[2];
 P[0] = 5;
 P[1] = 2;
 
-Punkt P1 = new Punkt(); //P1 ist ein Objekt, Instanz, Variable
+Klassen.Punkt P1 = new Klassen.Punkt(); //P1 ist ein Objekt, Instanz, Variable
 P1.x = 5.0;             // Mit dem Punktoperator greift man auf die Member zu
 P1.y = 2;
 
@@ -74,16 +75,6 @@ Console.WriteLine($"Punkt 1: Wert {P1.x} auf X-Achse");
 Console.WriteLine("Punkt 1 y-Wert: {0}", P1.y);
 Console.WriteLine($"P2 x: {P2.x} y: {P2.y}");
 
-// Eine Klasse beschreibt einen neuen eigenen Datentyp
-// Eine Klasse ist ein Bauplan für Objekte
-class Punkt //Schlüsselwort class erzeugt eine neue Klasse mit angegebenem Bezeichner
-{           
-    //Mitglieder, member
 
-    //Felder, fields, UML: Attribute
-    public double x; //Zugriffsmodifizierer, Sichtbarkeit
-    public double y;
-    private double z; //Sichtbarkeit private nur innnerhalb der Klasse (Standard)
-}
 
 

@@ -4,40 +4,11 @@ Console.WriteLine("Hello, World!");
 PKW auto1 = new PKW();
 //auto1.geschwindigkeit = 0;
 auto1.maxGeschwindigkeit = 200;
-auto1.beschleunigen(1000);
+auto1.beschleunigen(1000,true);
 Console.WriteLine("v = " + auto1.GetGeschwindigkeit());
-auto1.beschleunigen(-100);
+auto1.beschleunigen(-100,false);
 Console.WriteLine("v = " + auto1.GetGeschwindigkeit());
-auto1.beschleunigen(20);
+auto1.beschleunigen(20,true);
 Console.WriteLine("v = " + auto1.GetGeschwindigkeit());
-auto1.beschleunigen(-50);
+auto1.beschleunigen(-50,false);
 Console.WriteLine("v = " + auto1.GetGeschwindigkeit());
-//auto1.geschwindigkeit = 1200;
-
-//Console.WriteLine("aktuelle V: " + auto1.geschwindigkeit);
-
-class PKW
-{
-    //UML: Attribute, C#: Felder
-    public string antriebsart;
-    public int leistung;
-    private double geschwindigkeit;  //Kapselung
-    public double maxGeschwindigkeit;
-
-    //UML: Operationen, C#: Methoden
-    public void beschleunigen(double a)
-    {
-        geschwindigkeit = geschwindigkeit + a;
-        if (geschwindigkeit > maxGeschwindigkeit)
-        {
-            Console.WriteLine($"Maximalgeschwindigkeit von {maxGeschwindigkeit}km/h erreicht!");
-            geschwindigkeit = maxGeschwindigkeit;
-
-        }
-    }
-
-    public double GetGeschwindigkeit()
-    {
-        return geschwindigkeit;
-    }
-}
