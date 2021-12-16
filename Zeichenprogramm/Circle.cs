@@ -19,9 +19,10 @@ namespace Zeichenprogramm
             this.radius = radius;
         }
 
-        public Rectangle GetWinFormRectangle()
+        public System.Drawing.Rectangle GetWinFormRectangle()
         {
-            Rectangle rectangle = new Rectangle(
+            //Namespaceangabe ist notwendig, weil im Zeichenprogramm ein Rectangle existiert
+            System.Drawing.Rectangle rectangle = new System.Drawing.Rectangle(
                 (int)(x - radius), 
                 (int)(y - radius), 
                 (int)(radius * 2.0), 

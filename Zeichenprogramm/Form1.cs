@@ -25,7 +25,7 @@ namespace Zeichenprogramm
             Graphics panelGraphics = panelAusgabe.CreateGraphics();
             Pen pen = new Pen(Color.Black);
 
-            Rectangle rectangle = circle.GetWinFormRectangle();
+            System.Drawing.Rectangle rectangle = circle.GetWinFormRectangle();
 
             panelGraphics.DrawEllipse(pen, rectangle);
 
@@ -33,6 +33,21 @@ namespace Zeichenprogramm
             {
                 System.Diagnostics.Debug.WriteLine(circleList[i].GetInfo());
             }
+        }
+
+        private void btnCreateRectangle_Click(object sender, EventArgs e)
+        {
+            double x = Convert.ToDouble(txbRectangleX.Text);
+            double y = Convert.ToDouble(txbRectangleY.Text);
+            double a = Convert.ToDouble(txbRectangleA.Text);
+            double b = Convert.ToDouble(txbRectangleB.Text);
+
+            Rectangle rectangle = new Rectangle(x, y, a, b);
+
+            Graphics panelGraphics = panelAusgabe.CreateGraphics();
+
+            panelGraphics.DrawRectangle(new Pen(Color.Black), rectangle.GetWinFormsRectangle());
+
         }
     }
 }
