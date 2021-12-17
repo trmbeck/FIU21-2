@@ -3,13 +3,12 @@ namespace Zeichenprogramm
     public partial class Form1 : Form
     {
         Circle[] circleList = new Circle[10];
-        Rectangle[] rectangleList = new Rectangle[10];
         object[] objectList = new object[10];
 
-        int rectangleListIndex = 0;
         int circleListIndex = 0;
         int objectListIndex = 0;
-
+        //Rectangle[] rectangleList = new Rectangle[10];
+        //int rectangleListIndex = 0;
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +23,6 @@ namespace Zeichenprogramm
             Circle circle = new Circle(x, y, radius);
             objectList[objectListIndex] = circle;
             objectListIndex++;
-
             //evtl. Prüfung, ob Kreis mit gleichen Daten schon vorhanden
             //circleList[circleListIndex] = circle;
             //circleListIndex++;
@@ -36,7 +34,6 @@ namespace Zeichenprogramm
             //System.Drawing.Rectangle rectangle = circle.GetWinFormRectangle();
 
             //panelGraphics.DrawEllipse(pen, rectangle);
-
             DrawCirclesAndRectangles();
 
             for (int i = 0; i < circleListIndex; i++)
@@ -55,7 +52,6 @@ namespace Zeichenprogramm
             Rectangle rectangle = new Rectangle(x, y, a, b);
             objectList[objectListIndex] = rectangle;
             objectListIndex++;
-
             //rectangleList[rectangleListIndex] = rectangle;
             //rectangleListIndex++;
 
@@ -69,7 +65,6 @@ namespace Zeichenprogramm
         {
             Graphics panelGraphics = panelAusgabe.CreateGraphics();
             panelGraphics.Clear(SystemColors.Control);
-
             //for (int i = 0; i < circleListIndex; i++)
             //{
             //    panelGraphics.DrawEllipse(new Pen(Color.Black), circleList[i].GetWinFormRectangle());
@@ -78,7 +73,6 @@ namespace Zeichenprogramm
             //{
             //    panelGraphics.DrawRectangle(new Pen(Color.Red), rectangleList[i].GetWinFormsRectangle());
             //}
-
             for (int i = 0; i < objectListIndex; i++)
             {
                 if (objectList[i] is Circle)

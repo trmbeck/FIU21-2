@@ -1,4 +1,4 @@
-namespace Zeichenprogramm
+namespace TierSimulation
 {
     internal static class Program
     {
@@ -9,8 +9,7 @@ namespace Zeichenprogramm
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Form1 zeichenprogrammFenster = new Form1();
-            Application.Run(zeichenprogrammFenster);
+            Application.Run(new Form1());
         }
     }
 }

@@ -28,12 +28,5 @@ namespace Zeichenprogramm
             return rect;
         }
 
-        /*
-         *  +---------+
-         *  |         |
-         *  |         |
-         *  +---------+
-         *  
-         */
     }
 }
