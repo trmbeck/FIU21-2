@@ -10,16 +10,24 @@ namespace TierSimulation
     {
         private string fellfarbe;
         private bool schwanz = true;
-        public Loewe(int puls, int saett, string fellfarbe)// : base(puls,saett)
+        public Loewe(int puls, int saett, string fellfarbe, bool schwanz)// : base(puls,saett)
         {
-           this.puls = puls;
-           //TODO: saettigung und fellfarbe initialisieren
+            this.puls = puls;
+            this.saettigung = saett;
+            this.schwanz = schwanz;
+            this.fellfarbe = fellfarbe;
         }
 
         public bool Jagen(Tier tier)
         {
+            int wahrscheinlichkeit = 0;
+            
+            if (tier is Hai) wahrscheinlichkeit = 5;
+            if (tier is Storch) wahrscheinlichkeit = 60;
+            if (tier is Frosch) wahrscheinlichkeit = 95;
+
             Random random = new Random(); //Zufallszahl
-            if (random.Next(0, 100) < 10)
+            if (random.Next(0, 100) < wahrscheinlichkeit)
             {
                 return true;
             }
@@ -30,7 +38,10 @@ namespace TierSimulation
         }
         public void Bruellen(int lautstaerke)
         {
-            MessageBox.Show("MIAUUU!!!!");
+            if (lautstaerke < 50)
+                MessageBox.Show("MIAUUU!!!!");
+            else
+                MessageBox.Show("GGGGRRRRRR!!!!!");
         }
         public string GetFellfarbe()
         {
@@ -40,6 +51,15 @@ namespace TierSimulation
         {
             fellfarbe = f;
         }
-        //TODO: Setter und Getter für SChwanz
+
+        public bool GetSchwanz()
+        {
+            return schwanz;
+        }
+
+        public void SetSchwanz(bool s)
+        {
+            schwanz = s;
+        }
     }
 }

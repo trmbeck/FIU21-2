@@ -10,7 +10,7 @@ namespace TierSimulation
     {
         //Attribute
         protected int puls;
-        //TODO: saettigung implementieren
+        protected int saettigung;
 
         //Operationen
         public void Bewegen()
@@ -18,36 +18,45 @@ namespace TierSimulation
             MessageBox.Show("Tier bewegt sich");
         }
 
-        public void Bewegen(string richtung) //Überladung
+        public void Bewegen(string richtung) //Überladung -> gleicher Bezeichner, aber unterschiedliche Parameterliste
         {
-            MessageBox.Show($"Tie bewegt sich in Richtung {richtung}");
+            MessageBox.Show($"Tier bewegt sich in Richtung {richtung}");
         }
 
         public void Bewegen(double geschw) //Überladung
         {
             MessageBox.Show($"Tier bewegt sich mit der Geschwindigkeit von {geschw} km/h");
         }
-
-        //TODO: Fressenmethode implementieren
+        public void Fressen(double energiegehalt)
+        {
+            saettigung = (int)(saettigung + energiegehalt);
+        }
         public Tier(int p, int s)
         {
             puls = p;
-            //TODO: saettigung setzen
+            saettigung = s;
         }
         public Tier()
         {
-
+            puls = 100;
+            saettigung = 100;
         }
 
-        public int GetPuls()
+        public int GetPuls() // Getter-Methode für puls
         {
             return puls;
         }
-        public void SetPuls(int p)
+        public void SetPuls(int p) //Setter-Methode für puls
         {
             puls = p;
         }
-        //TODO: Getter und Setter für saettigung
-
+        public int GetSaettigung()
+        {
+            return saettigung;
+        }
+        public void SetSaettigung(int s)
+        {
+            saettigung = s;
+        }
     }
 }
