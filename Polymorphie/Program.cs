@@ -48,12 +48,12 @@ computerListe[2] = new Server();
 for (int i=0; i < computerListe.Length; i++)
 {
     
-    if (computerListe[i] is Notebook notebook)
-    {
-        notebook.einschalten();
-        //(computerListe[i] as Notebook).einschalten();
-        continue;
-    } 
+    //if (computerListe[i] is Notebook notebook)
+    //{
+    //    notebook.einschalten();
+    //    //(computerListe[i] as Notebook).einschalten();
+    //    continue;
+    //} 
 
     computerListe[i].einschalten();
 }
